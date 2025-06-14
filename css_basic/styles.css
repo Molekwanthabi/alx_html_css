@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+body.works_on_smartphone main {
+  flex-direction: column;
+}
+
 /* Step 2: Make main a flex container with horizontal direction */
 main {
   display: flex;
