@@ -44,3 +44,16 @@ header, footer {
 article, aside {
   min-height: 0; /* Ensures flexbox overflow-y works correctly in some browsers */
 }
+.logo {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+article h2 {
+  color: #0077cc;
+  font-family: 'Courier New', monospace;
+}
+
+article p {
+  line-height: 1.6;
+}
+
