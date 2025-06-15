@@ -1,0 +1,435 @@
+ / Base Reset */
+.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #071629;
+  color: white;
+  line-height: 1.6;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #071629;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar nav li a:hover {
+text-decoration: underline;
+}
+
+.hero{
+  background: url("CSS\ Advanced/Object.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 22, 41, 0,7);
+  z-index: 0; 
+}
+
+.hero-content {
+  position: relative;
+  z-index: index 1;
+  color: white;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero .subheading {
+  font-size: 16px;
+  margin-bottom: 20;
+  letter-spacing: 2px;
+}
+
+.hero .register-bnt {
+  background-color: #c271ff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 35px;
+}
+
+.invisible-box {
+  width: 200px;
+  height: 100px;
+  background-color: palevioletred;
+  border: none;
+}
+
+
+.membership-box {
+    width: 1440px;
+    height: 502px;
+    background-color: #0d1136; 
+    color: #ffffff; /
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the heading */
+.membership-box h1 {
+    color: #944bd3; /* Purple text color */
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Style for the feature containers */
+.feature-container {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    margin-bottom: 30px;
+}
+
+/* Style for individual features */
+.feature {
+    width: 25%;
+}
+
+/* Style for feature icons */
+.feature .icon {
+    font-size: 30px;
+    color: #944bd3; /* Purple icon color */
+    margin-bottom: 10px;
+}
+
+/* Style for feature headings */
+.feature h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for feature paragraphs */
+.feature p {
+    font-size: 14px;
+    color: #d6d6d6;
+}
+
+/* Style for the register button */
+.membership-box button {
+    background-color: #944bd3; /* Purple button color */
+    color: #ffffff; /* White button text color */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testimonial-box {
+    width: 1440px;
+    height: 329px;
+    background-color: #c561f5; /* Light purple background */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Match width for a circle */
+    margin-right: 30px; /* Spacing between image and text */
+}
+
+.person-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+.text-container {
+    flex: 1; /* Take up remaining space */
+}
+
+.quote {
+    font-size: 18px;
+    color: #ffffff; /* White text color */
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.person-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.person-title {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.faq-container {
+    width: 620px;
+    height: 707px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width and height */
+    font-family: sans-serif; /* Or your preferred font */
+}
+
+.faq-container h1 {
+    font-size: 2em; /* Adjust as needed */
+    text-align: center;
+    color: #1e3a8a; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.faq-row {
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Evenly distribute items with space between */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.faq-item {
+    width: 48%; /* Leave a little space for the gap */
+    text-align: left; /* Align text to the left */
+}
+
+.faq-item h2 {
+    font-size: 1.2em; /* Adjust as needed */
+    color: #1e3a8a; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 0.9em; /* Adjust as needed */
+    line-height: 1.4; /* Improve readability */
+    color: #555; /* Slightly darker text */
+}
+
+.tutorials-container {
+    width: 1228px;
+    height: 450px;
+    margin: 0 auto; /* Center the container horizontally */
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tutorials-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tutorials-container h1 span {
+    color: #944bd3;
+}
+
+.tutorial-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tutorial-item {
+    width: 23%; /* Adjust to create spacing */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    height: 150px; /* Fixed height for image */
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #944bd3;
+    cursor: pointer;
+}
+
+.tutorial-item h2 {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    color: #333;
+}
+
+.tutorial-item p {
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+    text-align: left;
+    color: #555;
+}
+
+.tutorial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.tutorial-footer .author img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.tutorial-footer .rating {
+    color: #944bd3;
+}
+
+/* Ensure stars align properly (adjust as needed) */
+.tutorial-footer .rating::before {
+  content: "\2605\2605\2605\2605\2606"; /* Four filled stars, one empty star */
+  font-size: 12px;
+}
+
+.tutorial-footer .duration {
+  text-align: right; /* Align "8 min" to the right */
+}
+
+
+.hero-content {
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 4em; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.hero-content p.sub-heading {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #944bd3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-from-pros {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #944bd3;
+}
+
+.pros-grid {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-start; /* Align items to the top of the container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.pro {
+    width: 200px;
+    margin: 20px;
+}
+
+.pro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pro h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.pro p {
+    font-size: 0.9em;
+}
+
+.background-container {
+  /* REQUIRED: Set width and height, so the image will be shown properly */
+  width: 100%; /* Or a fixed width, e.g., 1200px */
+  height: 500px; /* Or a fixed height, e.g., 600px */
+
+  /* Specify the image */
+  background-image: url("./CSS\ Advanced/Object"); /* Replace with your image URL */
+
+  /* Position the image */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+
+  /* Resize the background image to cover the container */
+  background-size: cover; /* Cover the entire container */
+
+  /* Optional: Add a semi-transparent background color for better text readability */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  background-blend-mode: multiply; /* Mix the color with the image.  Requires a `background-color` */
+
+  /* Optional: Style the text */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Optional: Style the heading and paragraph */
+.background-container h1 {
+    font-size: 3em;
+}
+
+.background-container p {
+    font-size: 1.2em;
+}
